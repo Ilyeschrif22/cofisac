@@ -152,6 +152,7 @@
 
 @media (max-width: 720px) {
     .cetifications-section {
+        height: 140vh;
         padding: 40px 20px;
     }
 

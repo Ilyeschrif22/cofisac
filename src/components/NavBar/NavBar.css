@@ -187,6 +187,6 @@
     .nav-drawer {
         top: 66px;
         height: calc(100vh - 66px);
-        width: 100vw;
+        width: 110vw;
     }
 }
