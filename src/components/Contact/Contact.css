@@ -1,4 +1,5 @@
 .contact-section {
+    height: 100vh;
     --contact-section-padding-x: 80px;
     padding: 96px 80px;
     background:
