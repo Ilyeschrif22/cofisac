@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+
+.about-us-section {
+    height: 80vh;
+    display: flex;
+    align-items: stretch;
+    padding: 80px;
+    background-color: #f9f9f9;
+}
+
+.about-us-title {
+    font-size: 14px;
+    margin: 0;
+    font-weight: 700;
+    text-transform: uppercase;
+    display: flex;
+    gap: 8px;
+    letter-spacing: 0.12em;
+    color: #1f1f1f;
+    align-items: center;
+}
+
+.about-us-title .number {
+    color: #cc2836;
+}
+
+.about-us-sub-title {
+    font-size: 44px;
+    font-weight: 700;
+    margin: 20px 0 0 0;
+}
+
+.about-us-image-container {
+    flex: 1;
+    border: 1px solid #ccc;
+    min-height: 350px;
+    background-image: url('https://cofisac.sn/wp-content/uploads/2026/02/A7404337-scaled.jpg');
+    border-radius: 40px;
+}
+
+.about-us-text {
+    margin-top: 30px;
+    line-height: 2;
+    color: #5C5D5E;
+}
+
+.cofisac {
+    color: red;
+}
+
+.about-us-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 100px;
+    font-size: 18px;
+}
+
+.about-us-list-icon {
+    height: 20px;
+    width: 20px;
+    background-color: #5C5D5E;
+    border-radius: 30px;
+    font-size: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-us-list-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin: 20px 0 20px 0;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.about-us-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+
+.voir-plus-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 140px;
+    height: 50px;
+    margin-top: 14px;
+    color: white;
+    background-color: #000;
+    cursor: pointer;
+    border-radius: 30px;
+    gap: 10px;
+}
+
+@media (max-width: 1200px) {
+    .about-us-section {
+        height: auto;
+        padding: 64px 40px;
+    }
+
+    .about-us-content {
+        padding: 20px 40px;
+    }
+
+    .about-us-sub-title {
+        font-size: 36px;
+    }
+
+    .about-us-image-container {
+        min-height: 320px;
+    }
+}
+
+@media (max-width: 720px) {
+    .about-us-section {
+        flex-direction: column;
+        padding: 48px 20px;
+    }
+
+    .about-us-image-container {
+        width: 100%;
+        min-height: 240px;
+        border-radius: 28px;
+    }
+
+    .about-us-content {
+        padding: 24px 0 0;
+        font-size: 16px;
+    }
+
+    .about-us-sub-title {
+        font-size: 28px;
+        line-height: 1.2;
+    }
+
+    .about-us-text {
+        line-height: 1.8;
+    }
+
+    .about-us-list-item {
+        align-items: flex-start;
+        gap: 12px;
+        margin: 14px 0;
+    }
+}

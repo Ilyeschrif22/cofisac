@@ -1,0 +1,62 @@
+.cetifications-section {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    background:
+        radial-gradient(circle at top, rgba(204, 40, 54, 0.08), transparent 30%),
+        linear-gradient(180deg, #f8f8f8 0%, #f2f2f2 100%);
+}
+
+.certifications-label {
+    font-size: 14px;
+    margin: 0 0 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    display: flex;
+    gap: 8px;
+    letter-spacing: 0.12em;
+    color: #1f1f1f;
+}
+
+.certifications-label .number {
+    color: #cc2836;
+}
+
+.certifications-title {
+    margin: 0;
+    max-width: 18ch;
+    font-size: clamp(32px, 4vw, 56px);
+    line-height: 1.1;
+    color: #111;
+}
+
+.certification-texts{
+    display: coloumn;
+    align-items: center;
+}
+
+
+.iso-cetifications{
+    width: 100%;
+    display: flex;
+    padding: 40px 80px;
+}
+
+.iso-cetification-image{
+ flex-direction: 1;
+    width: 50%;
+}
+
+.iso-cetification-image img{
+    width: 800px;
+    height: 250px;
+    border-radius: 30px;
+}
+
+
+.iso-cetification-content{
+    flex-direction: 1;
+    width: 50%;
+}

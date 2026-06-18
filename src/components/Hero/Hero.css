@@ -1,0 +1,99 @@
+
+.hero {
+    height: 100vh;
+    background-image: 
+        linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+        url('https://cofisac.sn/wp-content/uploads/2026/02/A7404337-scaled.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.cofisac-hero-text {
+    position: absolute;
+    top: 40%;
+    left: 80px;
+    transform: translateY(-50%);
+    font-size: 94px;
+    color: white;
+    font-weight: 700;
+    padding: 0;
+    margin: 0;
+}
+
+
+.cofisac-hero-subtext {
+    position: absolute;
+    top: 50%;
+    left: 80px;
+    transform: translateY(-50%);
+    font-size: 24px;
+    color: white;
+    font-weight: 400;
+    padding: 0;
+    margin: 0;
+}
+
+.en-savoir-plus-btn {
+    position: absolute;
+    top: 60%;
+    left: 80px;
+    transform: translateY(-50%);
+    background-color: white;
+    color: #000;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 150px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 80px;
+}
+
+@media (max-width: 1200px) {
+    .cofisac-hero-text {
+        left: 40px;
+        font-size: 72px;
+    }
+
+    .cofisac-hero-subtext {
+        left: 40px;
+        font-size: 20px;
+    }
+
+    .en-savoir-plus-btn {
+        left: 40px;
+    }
+}
+
+@media (max-width: 720px) {
+    .hero {
+        height: 82vh;
+        background-position: center;
+    }
+
+    .cofisac-hero-text {
+        left: 20px;
+        top: 34%;
+        font-size: 42px;
+    }
+
+    .cofisac-hero-subtext {
+        left: 20px;
+        top: 46%;
+        font-size: 16px;
+        max-width: calc(100% - 40px);
+    }
+
+    .en-savoir-plus-btn {
+        left: 20px;
+        top: 62%;
+        width: auto;
+        min-width: 150px;
+        height: 36px;
+        margin-top: 0;
+    }
+}
