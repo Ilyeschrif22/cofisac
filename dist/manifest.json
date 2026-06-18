@@ -1,0 +1,20 @@
+{
+  "short_name": "COFISAC",
+  "name": "COFISAC",
+  "icons": [
+    {
+      "src": "images/cofisac-logo.png",
+      "sizes": "904x413",
+      "type": "image/png"
+    },
+    {
+      "src": "images/cofisac-logo.png",
+      "type": "image/png",
+      "sizes": "904x413"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}

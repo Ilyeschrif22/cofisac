@@ -10,7 +10,6 @@ import Produits from './components/Produits';
 function App() {
   return (
     <div className="App">
-
       <NavBar />
       <Hero />
       <AboutUs />
@@ -18,7 +17,6 @@ function App() {
       <PourquoiNousChoisir />
       <Certification />
       <Contact />
-
     </div>
   );
 }
