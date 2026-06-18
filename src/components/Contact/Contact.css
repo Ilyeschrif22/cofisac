@@ -41,6 +41,7 @@
     display: flex;
     gap: 24px;
     align-items: stretch;
+    margin-bottom: 50px;
 }
 
 .contact-copy,
@@ -168,6 +169,7 @@
         max-width: 760px;
         padding-top: 0;
     }
+
 }
 
 @media (max-width: 720px) {
@@ -193,6 +195,6 @@
     }
 
     .contact-map-wrapper {
-        min-height: 340px;
+        min-height: 600px;
     }
 }

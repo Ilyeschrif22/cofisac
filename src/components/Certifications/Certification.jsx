@@ -6,7 +6,7 @@ const Certification = () => {
             <div className="certifications-inner">
                 <div className="certification-texts">
                     <p className="certifications-label">
-                        <span className="number">04.</span>
+                        <span className="number">05.</span>
                         <span className="text">CERTIFICATIONS</span>
                     </p>
                     <h2 className="certifications-title">
@@ -29,7 +29,10 @@ const Certification = () => {
                         <p className="iso-card-kicker">Engagement</p>
                         <h3 className="iso-card-title">Qualité</h3>
                         <p className="iso-card-text">
-                            COFISAC a procédé en 2018 à la transition de la Certification ISO 9001 version 2018 pour la version 2015, et à travers sa politique de qualité, elle s’est engagée à oeuvrer pour la satisfaction du client et le respect des exigences légales et réglementaires.
+                            COFISAC est certifiée SGS ISO 9001 version 2015 pour la transformation et la vente de sacs en polypropylène tissé.
+                        </p>
+                        <p className="iso-card-text">
+                            Cette certification confirme notre engagement pour la qualité, l’organisation et la satisfaction client.
                         </p>
                     </div>
                 </div>

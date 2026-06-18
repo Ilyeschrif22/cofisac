@@ -60,7 +60,7 @@
 
 .iso-cetifications {
     width: 100%;
-    min-height: 300px;
+    height: 300px;
     display: flex;
     margin-top: 44px;
     gap: 24px;
@@ -134,32 +134,57 @@
         min-height: unset;
     }
 
-    .certifications-title{
+    .certifications-title {
         text-align: left;
         width: 100%;
         margin: 0;
     }
 
     .iso-certification-content-card {
-        width: auto;
+        width: 100%;
         min-height: unset;
+    }
+
+    .cetifications-section {
+        justify-content: normal;
     }
 }
 
 @media (max-width: 720px) {
     .cetifications-section {
-        padding: 72px 20px;
+        padding: 40px 20px;
     }
 
     .certifications-summary {
         font-size: 16px;
+        text-align: left;
+    }
+
+    .iso-cetifications {
+        margin-top: 32px;
+        gap: 16px;
     }
 
     .iso-certification-content-card {
-        padding: 28px;
+        width: 100%;
+        padding: 24px 20px;
+        align-items: flex-start;
+        text-align: left;
+        gap: 10px;
+        overflow: visible;
     }
 
     .iso-cetification-image img {
         min-height: 220px;
+    }
+
+    .iso-card-title {
+        font-size: clamp(24px, 7vw, 32px);
+    }
+
+    .iso-card-text {
+        max-width: 300px;
+        font-size: 15px;
+        line-height: 1.7;
     }
 }

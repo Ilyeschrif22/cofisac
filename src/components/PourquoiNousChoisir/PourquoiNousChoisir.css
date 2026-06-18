@@ -48,20 +48,18 @@
 
 .why-us-card {
     background: rgba(255, 255, 255, 0.9);
-    border: 1px solid rgba(17, 17, 17, 0.08);
+    border: 1px solid #e0e0e0;
     border-radius: 24px;
     padding: 24px;
-    box-shadow: 0 18px 40px rgba(17, 17, 17, 0.07);
-    transition: transform 0.28s ease, box-shadow 0.28s ease, border-color 0.28s ease;
+    transition: transform 0.28s ease;
+    height: 180px;
 }
 
 .why-us-card:hover {
     transform: translateY(-6px);
-    box-shadow: 0 24px 52px rgba(17, 17, 17, 0.12);
-    border-color: rgba(204, 40, 54, 0.18);
 }
 
-.why-us-number {
+.why-us-icon {
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -70,9 +68,14 @@
     border-radius: 999px;
     background: rgba(204, 40, 54, 0.12);
     color: #cc2836;
-    font-weight: 800;
-    font-size: 14px;
     margin-bottom: 18px;
+    stroke: currentColor;
+    stroke-width: 2;
+    fill: none;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    padding: 10px;
+    box-sizing: border-box;
 }
 
 .why-us-card-title {
@@ -124,5 +127,11 @@
 
     .why-us-card {
         padding: 20px;
+    }
+
+    .why-us-icon {
+        width: 44px;
+        height: 44px;
+        padding: 9px;
     }
 }
