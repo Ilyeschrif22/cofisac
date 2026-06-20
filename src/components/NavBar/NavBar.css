@@ -6,6 +6,8 @@
     align-items: center;
     justify-content: space-between;
     position: relative;
+    padding: 0 20px;
+    box-sizing: border-box;
 }
 
 .cofisac-logo {
@@ -53,18 +55,33 @@
 .nav-links a {
     color: #333;
     text-decoration: none;
-    margin: 0 15px;
-    font-size: 16px;
+    margin: 0 18px;
+    font-size: 18px;
+}
+
+.dropdown-link {
+    position: relative;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.dropdown-link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 1px;
+    width: 0;
+    background: #000;
+    transition: width 0.3s ease;
+}
+
+.dropdown-link:hover::after {
+    width: 50%;
 }
 
 .dropdown {
     position: relative;
-}
-
-.dropdown-link {
-    display: flex;
-    align-items: center;
-    gap: 6px;
 }
 
 .dropdown-menu {
@@ -96,7 +113,6 @@
 .dropdown-menu:hover {
     display: flex;
 }
-
 .phone-number {
     display: flex;
     align-items: center;
@@ -121,13 +137,60 @@
     background-color: #000;
     color: #fff;
     border: none;
-    padding: 10px 20px;
+    padding: 12px 20px;
     cursor: pointer;
     font-size: 16px;
+    border-radius: 40px;
+    text-decoration: none;
 }
 
 .nav-drawer {
     display: none;
+}
+
+.mega-panel {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 80vh;
+  padding: 40px 100px;
+  box-sizing: border-box;
+  background: #4d4d4d;
+  font-size: 22px;
+  color: #fff;
+  z-index: 999;
+  overflow-y: auto;
+}
+
+.mega-grid {
+  display: column;
+}
+
+.produtcts-list{
+    gap: 15px;
+    width: 100%;
+}
+
+.product-item{
+    list-style: none;
+    line-height: 2.8;
+    border-bottom: 1px solid #fff;
+    width: 520px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.mega-link {
+    color: inherit;
+    text-decoration: none;
+    flex: 1;
+}
+
+.mega-link:hover {
+    text-decoration: underline;
 }
 
 @media (max-width: 1200px) {
@@ -170,7 +233,7 @@
     }
 
     .nav-menu{
-        width: 92%;
+        width: 100%;
     }
 }
 
@@ -185,8 +248,8 @@
     }
 
     .nav-drawer {
-        top: 66px;
-        height: calc(100vh - 66px);
+        top: 60px;
+        height: calc(100vh - 60px);
         width: 110vw;
     }
 }

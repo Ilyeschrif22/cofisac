@@ -15,6 +15,8 @@ const Contact = () => {
                     <p className="contact-description">
                         Envoyez-nous vos besoins, nous vous répondrons rapidement avec une solution adaptée à votre activité.
                     </p>
+                    
+                
                 </div>
 
                 <div className="contact-right">

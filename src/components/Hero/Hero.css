@@ -1,6 +1,6 @@
 
 .hero {
-    height: 95vh;
+    height: 85vh;
   background-image:
   linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)),
   url("https://cofisac.sn/wp-content/uploads/2026/02/A7404337-scaled.jpg");
@@ -80,7 +80,7 @@
     .cofisac-hero-text {
         left: 20px;
         top: 29%;
-        font-size: 42px;
+        font-size: 38px;
     }
 
     .cofisac-hero-subtext {

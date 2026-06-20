@@ -1,8 +1,24 @@
 import { useState } from 'react';
 import './NavBar.css';
 
+const productLinks = [
+  { label: 'Sacs en Polypropylène Tissé', href: '/#products' },
+  { label: 'Sacs laminés', href: '/#products' },
+  { label: 'Sacs imprimés', href: '/#products' },
+  { label: 'Sacs alimentaires', href: '/#products' },
+  { label: 'Sacs agricoles', href: '/#products' },
+  { label: 'Sacs personnalisés', href: '/#products' },
+];
+
+const aboutLinks = [
+  { label: 'Qui sommes-nous', href: '/#about' },
+  { label: 'Notre processus', href: '/#process' },
+  { label: 'Certifications', href: '/#certifications' },
+];
+
 const NavBar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [hoveredMenu, setHoveredMenu] = useState(null);
 
   const toggleMenu = () => {
     setMenuOpen((open) => !open);
@@ -26,31 +42,65 @@ const NavBar = () => {
       </button>
 
       <ul className="nav-links" id="nav-links">
-        <li className='nav-item'><a href="/">Accueil</a></li>
-        <li className='nav-item'><a href="/about">À propos</a></li>
-
-        <li className="nav-item dropdown">
-          <a href="/services" className="dropdown-link">
-            Produits
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-              <polyline points="6 9 12 15 18 9" />
-            </svg>
-          </a>
-
-          <ul className="dropdown-menu">
-            <li><a href="#">Sacs PP tissés</a></li>
-            <li><a href="#">Sacs laminés</a></li>
-            <li><a href="#">Sacs imprimés</a></li>
-            <li><a href="#">Big Bags</a></li>
-            <li><a href="#">Sacs alimentaires</a></li>
-            <li><a href="#">Sacs agricoles</a></li>
-          </ul>
+        <li className='nav-item'><a href="/" className="dropdown-link">Accueil</a></li>
+        <li
+          className='nav-item dropdown'
+          onMouseEnter={() => setHoveredMenu('about')}
+          onMouseLeave={() => setHoveredMenu(null)}
+        >
+          <a href="/#about" className="dropdown-link">À propos</a>
+        </li>
+        <li
+          className='nav-item dropdown'
+          onMouseEnter={() => setHoveredMenu('products')}
+        >
+          <a href="/#products" className="dropdown-link">Produits</a>
         </li>
 
-        <li className='nav-item'><a href="/certifications">Certifications</a></li>
         <li className='nav-item'><a href="/contact">Contact</a></li>
 
       </ul>
+
+      {hoveredMenu && (
+        <div
+          className="mega-panel"
+          onMouseLeave={() => setHoveredMenu(null)}
+        >
+          {hoveredMenu === 'products' && (
+            <div className="mega-grid">
+              <ul className='produtcts-list'>
+                {productLinks.map((item) => (
+                  <li className='product-item' key={item.label}>
+                    <a href={item.href} className="mega-link">
+                      {item.label}
+                    </a>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                      <path d="m9 18 6-6-6-6" />
+                    </svg>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          )}
+
+          {hoveredMenu === 'about' && (
+            <div className="mega-grid">
+              <ul className='produtcts-list'>
+                {aboutLinks.map((item) => (
+                  <li className='product-item' key={item.label}>
+                    <a href={item.href} className="mega-link">
+                      {item.label}
+                    </a>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                      <path d="m9 18 6-6-6-6" />
+                    </svg>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          )}
+        </div>
+      )}
 
       <div className='nav-contact-section'>
         <div className='phone-number'>
@@ -62,9 +112,9 @@ const NavBar = () => {
           (+216) 71559636
         </div>
 
-        <div className='demander-un-devis-button'>
+        <a href="/contact" className='demander-un-devis-button'>
           Demander un devis <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right-icon lucide-arrow-up-right"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>
-        </div>
+        </a>
       </div>
 
       <div className={`nav-drawer${menuOpen ? ' is-open' : ''}`} id="nav-drawer" aria-hidden={!menuOpen} />

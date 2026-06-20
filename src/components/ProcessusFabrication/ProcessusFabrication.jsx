@@ -108,7 +108,7 @@ const StepIcon = ({ name }) => (
 
 const ProcessusFabrication = () => {
     return (
-        <section className="process-section" aria-labelledby="process-title">
+        <section className="process-section" id="process" aria-labelledby="process-title">
             <div className="process-header">
                 <p className="process-label">
                     <span className="number">03.</span>

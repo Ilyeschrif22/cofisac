@@ -2,18 +2,13 @@ import './Produits.css';
 
 const products = [
     {
-        title: 'Sacs PP tissés',
+        title: 'Sacs en Polypropylène Tissé',
         description: 'Sacs utilisés pour le conditionnement industriel et agricole.',
         image: '/images/sac-pp.jpg',
     },
     {
         title: 'Sacs laminés',
         description: 'Idéal pour les produits nécessitant une protection supplémentaire.',
-        image: '/images/sac-pp.jpg',
-    },
-    {
-        title: 'Big Bags',
-        description: 'Solutions pour le stockage et le transport de grandes quantités.',
         image: '/images/sac-pp.jpg',
     },
     {
@@ -35,7 +30,7 @@ const products = [
 
 const Produits = () => {
     return (
-        <section className="produits-section" aria-labelledby="nos-produits-title">
+        <section className="produits-section" id="products" aria-labelledby="nos-produits-title">
             <div className="produits-header">
                 <p className="nos-produits-title" id="nos-produits-title">
                     <span className="number">02.</span>

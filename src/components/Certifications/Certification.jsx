@@ -2,7 +2,7 @@ import './Certification.css';
 
 const Certification = () => {
     return (
-        <div className='cetifications-section'>
+        <div className='cetifications-section' id="certifications">
             <div className="certifications-inner">
                 <div className="certification-texts">
                     <p className="certifications-label">

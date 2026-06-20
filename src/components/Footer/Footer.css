@@ -1,0 +1,150 @@
+.footer-section {
+    min-height: 60vdh;
+    background-color: #000;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 80px 100px 40px;
+    box-sizing: border-box;
+    gap: 60px;
+    align-items: flex-start;
+    border-top: 0.5px solid rgba(255, 255, 255, 0.15);
+}
+.cofisac-footer-content,
+.cofisac-footer-navigation-container {
+    padding-bottom: 40px;
+}
+
+.cofisac-footer-content {
+    flex: 1.2;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.footer-logo {
+    width: 120px;
+    height: 60px;
+    object-fit: contain;
+}
+
+.cofisac-footer-description {
+    color: rgba(255, 255, 255, 0.55);
+    line-height: 1.8;
+    font-size: 15px;
+    max-width: 380px;
+    margin: 0;
+}
+
+.cofisac-footer-navigation-container {
+    flex: 1.8;
+    display: flex;
+    gap: 48px;
+}
+
+.footer-nav-col {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.footer-col-title {
+    color: #fff;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    margin: 0 0 4px;
+}
+
+.footer-nav-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.footer-nav-list li a {
+    color: rgba(255, 255, 255, 0.55);
+    text-decoration: none;
+    font-size: 15px;
+    transition: color 0.2s ease;
+}
+
+.footer-nav-list li a:hover {
+    color: #fff;
+}
+
+.footer-contact-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.footer-contact-list li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: rgba(255, 255, 255, 0.55);
+    font-size: 15px;
+}
+
+.footer-contact-list li svg {
+    flex-shrink: 0;
+    opacity: 0.6;
+}
+
+.footer-devis-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    margin-top: 8px;
+    padding: 10px 18px;
+    background-color: #fff;
+    color: #000;
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: opacity 0.2s ease;
+    width: fit-content;
+}
+
+.footer-devis-btn:hover {
+    opacity: 0.85;
+}
+
+.footer-bottom {
+    width: 100%;
+    border-top: 0.5px solid rgba(255, 255, 255, 0.15);
+    padding-top: 24px;
+    margin-top: auto;
+    align-self: flex-end;
+}
+
+.footer-bottom p {
+    color: rgba(255, 255, 255, 0.35);
+    font-size: 13px;
+    margin: 0;
+}
+
+@media (max-width: 900px) {
+    .footer-section {
+        flex-direction: column;
+        padding: 60px 32px;
+    }
+
+    .cofisac-footer-navigation-container {
+        flex-wrap: wrap;
+        gap: 32px;
+    }
+
+    .cofisac-footer-description {
+        max-width: 100%;
+    }
+}
