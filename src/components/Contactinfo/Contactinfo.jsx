@@ -20,13 +20,11 @@ const Contactinfo = () => {
 
           <div className="contact-card-details">
             <p className="contact-details-line">
-              <span className="contact-details-label">Téléphone :</span>
-              <a href="tel:+216338423035"> (+216) 71559636</a>
+              <span className="contact-details-label">Téléphone : (+216) 71559636</span>
             </p>
 
             <p className="contact-details-line">
-              <span className="contact-details-label">Fax :</span>
-              <a href="tel:+216775176122"> (+216) 71559320</a>
+              <span className="contact-details-label">Fax : (+216) 71559320</span>
             </p>
           </div>
         </article>

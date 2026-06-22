@@ -7,7 +7,7 @@ const Footer = () => {
       <div className="cofisac-footer-content">
         <img src='/images/cofisac-logo.png' className='footer-logo' alt="Cofisac Logo" />
         <p className='cofisac-footer-description'>
-          COFISAC (Compagnie de Filature et de Sacherie) est une unité industrielle sénégalaise spécialisée dans la fabrication de sacs en polypropylène tissé pour le conditionnement de produits agro-industriels. Forte de près de 47 ans d'expérience, elle accompagne les acteurs agricoles et industriels avec des solutions d'emballage de qualité.
+          COFISAC (Compagnie de Filature et de Sacherie) est une unité industrielle spécialisée dans la fabrication de sacs en polypropylène tissé pour le conditionnement de produits agro-industriels. Forte de près de 47 ans d'expérience, elle accompagne les acteurs agricoles et industriels avec des solutions d'emballage de qualité.
         </p>
       </div>
 

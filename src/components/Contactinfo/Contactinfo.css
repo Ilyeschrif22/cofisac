@@ -87,6 +87,7 @@
   margin-top: 0;
   padding: 0;
   border-left: none;
+color: #5c5d5e;
 }
 
 .contact-details-line {
@@ -102,8 +103,7 @@
 }
 
 .contact-details-label {
-  font-weight: 700;
-  color: #111;
+  color: #5c5d5e;
 }
 
 .contact-card-details a {
