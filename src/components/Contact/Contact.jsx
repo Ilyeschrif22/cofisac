@@ -6,7 +6,7 @@ const Contact = () => {
             <div className="contact-layout">
                 <div className="contact-copy">
                     <p className="contact-label">
-                        <span className="number">06.</span>
+                        <span className="number">07.</span>
                         <span className="text">RESTONS EN CONTACT</span>
                     </p>
                     <h2 className="contact-title" id="contact-title">

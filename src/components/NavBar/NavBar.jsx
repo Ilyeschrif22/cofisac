@@ -11,7 +11,7 @@ const productLinks = [
 ];
 
 const aboutLinks = [
-  { label: 'Qui sommes-nous', href: '/#about' },
+  { label: 'Qui sommes nous', href: '/qui-sommes-nous' },
   { label: 'Notre processus', href: '/#process' },
   { label: 'Certifications', href: '/#certifications' },
 ];
@@ -46,18 +46,17 @@ const NavBar = () => {
         <li
           className='nav-item dropdown'
           onMouseEnter={() => setHoveredMenu('about')}
-          onMouseLeave={() => setHoveredMenu(null)}
         >
-          <a href="/#about" className="dropdown-link">À propos</a>
+          <p  className="dropdown-link">À propos</p>
         </li>
         <li
           className='nav-item dropdown'
           onMouseEnter={() => setHoveredMenu('products')}
         >
-          <a href="/#products" className="dropdown-link">Produits</a>
+          <p className="dropdown-link">Produits</p>
         </li>
 
-        <li className='nav-item'><a href="/contact">Contact</a></li>
+        <li className='nav-item'><a href="/contact" className="dropdown-link">Contact</a></li>
 
       </ul>
 

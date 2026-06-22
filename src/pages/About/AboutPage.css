@@ -1,0 +1,17 @@
+.about-page-hero {
+  background-color: #f9f9f9;
+}
+
+.about-page-image {
+  background-image: url('https://cofisac.sn/wp-content/uploads/2026/02/A7404337-scaled.jpg');
+}
+
+.about-page-extra {
+  margin-top: 18px;
+}
+
+@media (max-width: 720px) {
+  .about-page-hero .about-us-content {
+    gap: 0;
+  }
+}

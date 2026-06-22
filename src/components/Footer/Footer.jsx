@@ -16,7 +16,7 @@ const Footer = () => {
           <h4 className='footer-col-title'>Liens rapide</h4>
           <ul className='footer-nav-list'>
             <li><a href="/">Accueil</a></li>
-            <li><a href="/about">À propos</a></li>
+            <li><a href="/qui-sommes-nous">Qui sommes nous</a></li>
             <li><a href="/certifications">Certifications</a></li>
             <li><a href="/contact">Contact</a></li>
           </ul>
