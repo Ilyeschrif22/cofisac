@@ -42,7 +42,7 @@ const Contactinfo = () => {
           <div className="contact-card-details">
             <p className="contact-details-line">
               <span className="contact-details-label">Adresse e-mail :</span>
-              <a href="mailto:contact@cofisac.tn"> contact@cofisac.tn</a>
+              <a href="mailto:contact@cofisac.tn"> info@cofisac.tn</a>
             </p>
           </div>
         </article>
