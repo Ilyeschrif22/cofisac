@@ -25,10 +25,9 @@ const Footer = () => {
         <div className='footer-nav-col'>
           <h4 className='footer-col-title'>Produits</h4>
           <ul className='footer-nav-list'>
-            <li><a href="#">Sacs PP tissés</a></li>
+            <li><a href="#">Sacs en Polypropylène Tissé</a></li>
             <li><a href="#">Sacs laminés</a></li>
             <li><a href="#">Sacs imprimés</a></li>
-            <li><a href="#">Big Bags</a></li>
             <li><a href="#">Sacs alimentaires</a></li>
             <li><a href="#">Sacs agricoles</a></li>
           </ul>

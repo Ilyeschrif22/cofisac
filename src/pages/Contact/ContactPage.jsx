@@ -1,4 +1,5 @@
 import Contact from '../../components/Contact';
+import Contactinfo from '../../components/Contactinfo/Contactinfo';
 import Footer from '../../components/Footer/Footer';
 import NavBar from '../../components/NavBar';
 import PageHeader from '../../components/PageHeader';
@@ -23,6 +24,7 @@ const ContactPage = () => {
           { label: 'Localisation', value: 'Tunis, Tunisie' },
         ]}
       />
+      <Contactinfo />
       <Contact />
       <Footer />
     </div>
