@@ -34,8 +34,13 @@
     flex: 1;
     border: 1px solid #ccc;
     min-height: 350px;
-    background-image: url('https://cofisac.sn/wp-content/uploads/2026/02/A7404337-scaled.jpg');
     border-radius: 40px;
+
+    background-image: url('https://cofisac.sn/wp-content/uploads/2026/02/A7404337-scaled.jpg');
+
+    background-repeat: no-repeat;      
+    background-size: cover;          
+    background-position: center;     
 }
 
 .about-us-text {

@@ -1,7 +1,7 @@
 .contact-section {
     height: 100%;
     --contact-section-padding-x: 80px;
-    padding: 96px 80px;
+    padding: 20px 80px 0 80px;
     background:
         radial-gradient(circle at top right, rgba(204, 40, 54, 0.08), transparent 28%),
         linear-gradient(180deg, #f8f8f8 0%, #f2f2f2 100%);
@@ -213,7 +213,7 @@
 @media (max-width: 720px) {
     .contact-section {
         --contact-section-padding-x: 20px;
-        padding: 0 20px;
+        padding: 40px 20px 0 20px;
     }
 
     .contact-field-row {

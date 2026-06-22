@@ -1,5 +1,6 @@
 .cetifications-section {
-    min-height: 100vh;
+    min-height: 100%;
+    padding: 80px 40px;
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -153,7 +154,7 @@
 @media (max-width: 720px) {
     .cetifications-section {
         height: 140vh;
-        padding: 40px 20px;
+        padding: 40px 20px 0px 20px;
     }
 
     .certifications-summary {
