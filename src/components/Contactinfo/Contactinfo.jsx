@@ -42,7 +42,7 @@ const Contactinfo = () => {
           <div className="contact-card-details">
             <p className="contact-details-line">
               <span className="contact-details-label">Adresse e-mail :</span>
-              <a href="mailto:contact@cofisac.tn"> info@cofisac.tn</a>
+              <a href="mailto:contact@cofisac.tn"> info@cofisac.com</a>
             </p>
           </div>
         </article>
@@ -59,8 +59,9 @@ const Contactinfo = () => {
 
           <div className="contact-card-details">
             <p className="contact-details-line">
-              <span className="contact-details-label">Localisation :</span>
-              <span> Tunis, Tunisie</span>
+             <span className="contact-details-label">COFISAC</span>
+              <span className="contact-details-label">Z.I. BIRINE</span>
+              <span className="contact-details-label">1095 SIDI HASSINE</span>
             </p>
           </div>
         </article>

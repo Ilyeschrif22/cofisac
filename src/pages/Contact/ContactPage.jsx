@@ -21,7 +21,7 @@ const ContactPage = () => {
         details={[
           { label: 'Téléphone', value: '(+216) 71 559 636', href: 'tel:+21671559636' },
           { label: 'Email', value: 'contact@cofisac.tn', href: 'mailto:contact@cofisac.tn' },
-          { label: 'Localisation', value: 'Tunis, Tunisie' },
+          { label: 'Localisation', value: 'COFISAC, Z.I. BIRINE, 1095 SIDI HASSINE' },
         ]}
       />
       <Contactinfo />

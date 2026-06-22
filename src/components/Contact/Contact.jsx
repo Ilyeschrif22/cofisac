@@ -63,7 +63,7 @@ const Contact = () => {
                 <div className="contact-map-wrapper">
                     <iframe
                         title="Carte Cofisac"
-                        src="https://www.google.com/maps?q=Cofisac%20Tunisie&z=15&output=embed"
+                        src="https://www.google.com/maps?q=COFISAC%20Z.I.%20BIRINE%201095%20SIDI%20HASSINE&z=15&output=embed"
                         loading="lazy"
                         referrerPolicy="no-referrer-when-downgrade"
                         allowFullScreen
