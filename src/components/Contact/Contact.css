@@ -1,5 +1,5 @@
 .contact-section {
-    height: 110vh;
+    height: 100%;
     --contact-section-padding-x: 80px;
     padding: 96px 80px;
     background:
@@ -213,7 +213,7 @@
 @media (max-width: 720px) {
     .contact-section {
         --contact-section-padding-x: 20px;
-        padding: 64px 20px;
+        padding: 0 20px;
     }
 
     .contact-field-row {
