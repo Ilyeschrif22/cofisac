@@ -28,7 +28,7 @@ const Hero = () => {
                 preload="auto"
                 aria-hidden="true"
             >
-                <source src="/video/abco-tanitim.webm" type="video/webm" />
+                <source src="/video/abco-tanitim.mp4" type="video/webm" />
             </video>
             <div className="hero-overlay" aria-hidden="true" />
             <div className="hero-content">
