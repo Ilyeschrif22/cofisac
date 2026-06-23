@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import './NavBar.css';
 
 const productLinks = [
@@ -41,6 +41,25 @@ const NavBar = () => {
   const toggleMenu = () => {
     setMenuOpen((open) => !open);
   };
+
+  useEffect(() => {
+    if (typeof document === 'undefined') {
+      return undefined;
+    }
+
+    const { body } = document;
+    const previousOverflow = body.style.overflow;
+
+    if (menuOpen) {
+      body.style.overflow = 'hidden';
+    } else {
+      body.style.overflow = previousOverflow;
+    }
+
+    return () => {
+      body.style.overflow = previousOverflow;
+    };
+  }, [menuOpen]);
 
   return (
     <div className='nav-menu'>
