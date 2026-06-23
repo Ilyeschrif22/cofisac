@@ -53,7 +53,6 @@
     border: 1px solid rgba(17, 17, 17, 0.08);
     border-radius: 20px;
     overflow: hidden;
-    box-shadow: 0 18px 40px rgba(17, 17, 17, 0.08);
     backdrop-filter: blur(8px);
     transition: transform 0.28s ease, box-shadow 0.28s ease, border-color 0.28s ease;
     display: flex;

@@ -77,6 +77,7 @@
   font-size: 32px;
   font-weight: 800;
   color: #111;
+  text-align: center;
 }
 
 .contact-card-details {
@@ -134,6 +135,7 @@ color: #5c5d5e;
 
   .contact-cards {
     grid-template-columns: 1fr;
+    gap: 70px;
   }
 
   .contact-card {
